@@ -1,0 +1,181 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #f13d6c, #7b46cd);
+           
+}
+
+/* -------------------------------------------------------*/
+    /* Navigation/Main menu*/
+/* -------------------------------------------------------*/
+
+.main-container {
+    margin: 60px 30px ;
+    /*border: solid;*/
+  }
+  
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr );
+    grid-gap: 20px;
+    height: 55px;
+    
+    /*  border: solid;   */
+  }
+
+  .nav-item {
+      display: flex;
+      background-color: orange;
+      align-items:center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: uppercase; 
+        
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: black;
+  }
+/* -------------------------------------------------------*/
+    /* Banner and Price */
+/* -------------------------------------------------------*/
+
+.banner {
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-areas:
+    'banner banner price-top'
+    'banner banner price-bottom';
+  height: 350px;    
+}
+
+.banner-item-descriptions {
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 30px;
+  background: url("https://drive.google.com/uc?export=view&id=14rapcQJeyV1Ie18XUbTKtxRFH2L5FLDn");
+  background-position: center;
+  background-size: cover;  
+}
+
+.banner-item-descriptions  h1 {
+  font-size: 30px;
+  margin-top: 0px;
+  background-color: orange;
+  font-weight: 800;
+}
+
+.banner-item-descriptions  p {
+    font-size: 15px;
+    margin-top: -20px;
+    background-color: orange;
+    font-weight: 800;
+}
+
+.banner-item-price {
+  text-align: center;
+  justify-content: center;
+  background-color: orange;
+}
+
+.banner-item-price .price {
+  font-size: 40px;
+}
+
+.banner-item-price h4{
+  margin-top: -25px;
+}
+
+/* -------------------------------------------------------*/
+  /* Tiles/Boxes in the middle  of the page. */
+/* -------------------------------------------------------*/
+
+.tiles {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px; 
+}
+
+.tiles-item {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 0 0 ;  
+}
+
+
+.tiles-item p {
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------*/
+  /* Featured item under the titles. */
+/* -------------------------------------------------------*/
+
+.featured-item {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #fff;
+  padding: 20px;
+  align-items: center;
+}
+
+.featured-item h2 {
+  font-weight: 900;
+  margin-top: -20px;
+}
+
+.featured-item p {
+  font-weight: 800;
+}
+
+.taco-link {
+  background-color: #ffc600;
+  padding: 15px ;
+  text-decoration: none;  
+  color: #000;
+}
+
+/* -------------------------------------------------------*/
+  /* Instant gram. */
+/* -------------------------------------------------------*/
+.instant-gram {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  margin-top:20px;
+  font-weight: 900;  
+}
+
+.instant-gram-item{
+  height: 15px;    
+  text-align: center;
+  font-size: 12px;
+}
+
+#instant-gram-gradient-lh {
+  background: linear-gradient(to right, #f13d6c, orange);
+}
+
+#instant-gram-gradient-rh {
+  background: linear-gradient(to right, orange, #7b46cd);
+}
+
+/* -------------------------------------------------------*/
+  /* Small boxes. */
+/* -------------------------------------------------------*/
+.gal{
+
+  margin-top:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
